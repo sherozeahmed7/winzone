@@ -1,0 +1,51 @@
+
+
+/* Author's Logo */
+.authors-logo {
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  margin-right: 20px; /* Space between logo and text */
+  background-color: #a874a2;
+}
+
+/* Author's Details */
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-heading {
+  font-weight: 700; /* Bold heading */
+  color: #333; /* Neutral color for text */
+  margin-bottom: 10px;
+}
+
+/* Tags */
+.author-tags .tag {
+  display: inline-block;
+  background-color: #007bff; /* Primary color */
+  color: white;
+  padding: 8px 12px; /* Consistent padding */
+  border-radius: 20px; /* Rounded edges for tags */
+  margin-right: 8px; /* Spacing between tags */
+  margin-bottom: 5px; /* Responsive wrap spacing */
+  font-size: 0.9rem; /* Adjust font size for tags */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .authors-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .author-heading {
+    font-size: 1.2rem;
+  }
+
+  .author-tags .tag {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

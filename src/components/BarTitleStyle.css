@@ -1,0 +1,161 @@
+/* BarTitle Component Container */
+.bar-title-container {
+  background-color: #f0f4fa; /* Light blue background */
+  padding: 15px 0;
+  border-bottom: 2px solid #d6e0eb; /* Subtle border */
+}
+
+/* Navbar */
+.bar-title-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.bar-title-logo img {
+  max-width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.bar-title-logo img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Educational Message */
+.bar-title-message {
+  color: #1a4b8c; /* Dark blue text color */
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6;
+  background: #ffffff; /* White background */
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d6e0eb; /* Border to match container */
+  flex: 1; /* Allows message to adapt to available space */
+  margin: 10px 40px 10px 40px; /* Space between elements */
+}
+
+/* Toggler Button */
+.bar-title-toggler {
+  border: none;
+  background-color: transparent;
+  margin: 10px 0; /* Space for smaller screens */
+}
+
+.bar-title-toggler-icon {
+  width: 25px;
+  height: 2px;
+  background-color: #1a4b8c; /* Dark blue bar */
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar-title-toggler-icon::before,
+.bar-title-toggler-icon::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #1a4b8c; /* Dark blue bar */
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar-title-toggler-icon::before {
+  top: -8px;
+}
+
+.bar-title-toggler-icon::after {
+  top: 8px;
+}
+
+.bar-title-toggler:hover .bar-title-toggler-icon,
+.bar-title-toggler:hover .bar-title-toggler-icon::before,
+.bar-title-toggler:hover .bar-title-toggler-icon::after {
+  background-color: #0c2e5b; /* Darker blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .bar-title-navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .bar-title-logo img {
+    max-width: 150px;
+    margin-bottom: 10px; /* Add space between logo and message */
+  }
+
+  .bar-title-message {
+    font-size: 13px; /* Slightly smaller text */
+    padding: 10px 12px; /* Adjust padding for smaller screens */
+
+  }
+
+  .bar-title-toggler {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .bar-title-message {
+    font-size: 12px; /* Even smaller text for very small screens */
+    line-height: 1.4;
+  }
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100%;
+  max-width: 50%;
+  background: #111;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  z-index: 1050;
+  overflow-y: auto;
+}
+
+.sidebar-open {
+  left: 0;
+}
+
+.sidebar-content {
+  padding: 2rem;
+}
+
+.sidebar-content h4 {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-content ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-content ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+  }
+}

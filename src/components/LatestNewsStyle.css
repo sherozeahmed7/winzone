@@ -1,0 +1,80 @@
+/* LatestNews Container */
+.latestnews-container {
+  display: flex;
+  align-items: center; /* Vertically align the content */
+  margin-bottom: 15px; /* Space between news items */
+}
+
+/* Image Section */
+.latestnews-image img {
+  border-radius: 50%; /* Circular image */
+  width: 90px; /* Fixed width */
+  height: 90px; /* Fixed height */
+  object-fit: cover; /* Ensure the image covers the circle */
+}
+
+/* Text Section */
+.latestnews-text {
+  flex-grow: 1; /* Allow the text to take up the remaining space */
+}
+
+.news-time {
+  font-size: 14px;
+  color: #888; /* Lighter color for time */
+  margin: 0;
+}
+
+.news-description {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333; /* Darker color for description */
+}
+
+.news-tags p {
+  font-size: 14px;
+  color: #007bff; /* Blue color for tags */
+  text-decoration: none;
+  margin: 0;
+}
+
+.news-tags p:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .latestnews-container {
+    flex-direction: column; /* Stack the content vertically on smaller screens */
+    align-items: flex-start; /* Align content to the left */
+  }
+
+  .latestnews-image img {
+    width: 70px; /* Smaller image size on smaller screens */
+    height: 70px;
+  }
+
+  .latestnews-text {
+    margin-top: 10px; /* Add spacing between the image and text */
+  }
+
+  .news-time, .news-description, .news-tags p {
+    font-size: 14px; /* Reduce font size for better readability */
+  }
+}
+
+@media (max-width: 576px) {
+  .latestnews-container {
+    flex-direction: column; /* Stack vertically on very small screens */
+    align-items: flex-start;
+  }
+
+  .latestnews-image img {
+    width: 60px; /* Further reduce image size */
+    height: 60px;
+  }
+
+  .news-time, .news-description, .news-tags p {
+    font-size: 12px; /* Further reduce font size for very small screens */
+  }
+}

@@ -1,0 +1,63 @@
+/* Story Post Section */
+.story-post {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Light gray divider */
+  }
+  
+  .story-post h1 {
+    font-size: 28px; /* Larger text for title */
+    color: #1a535c; /* Dark teal */
+  }
+  
+  /* Category Buttons */
+  .btn-category {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px; 
+    transition: all 0.3s ease;
+
+    background: linear-gradient(135deg, #007bff, #00c6ff); /* Blue gradient background */
+    color: black; /* Text color */
+    border: none;
+    padding: 12px 25px; /* Padding for a more spacious look */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background 0.3s, transform 0.2s ease-in-out; /* Smooth transition for background and scale */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-category:hover {
+  
+    color: white;
+  background: linear-gradient(135deg, #0056b3, #00a3d4); /* Darker gradient */
+  transform: scale(1.05); /* Slightly increase button size */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+
+
+  }
+  
+  .active-category {
+    background: linear-gradient(135deg, #0056b3, #00a3d4); /* Darker gradient */
+
+    color: #ffff; /* White text */
+    background-color: #1a535c; /* Dark teal background for active button */
+    border-color: #1a535c; /* Teal border */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .story-post {
+      text-align: center;
+    }
+  
+    .btn-category {
+      margin: 10px auto;
+      display: block; /* Stack buttons vertically on smaller screens */
+    }
+  }
+  
+

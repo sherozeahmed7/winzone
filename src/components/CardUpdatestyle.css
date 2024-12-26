@@ -1,0 +1,36 @@
+.cardSub {
+  width: 1300px;
+  height: 250px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.cardimg {
+  width: 300px;
+  height: 250px;
+
+  position: absolute;
+
+  background-color: lightgray !important;
+  top: 30px;
+  left: 45px;
+}
+.textsub {
+  margin-left: 40%;
+  margin-top: 5%;
+}
+.hrtag {
+  color: white;
+  border: 1px solid white;
+  margin-right: 100px;
+}
+.inputtxt {
+  color: white;
+  margin-right: 50px;
+}
+.inputtxt::placeholder {
+  color: white;
+}
+.btnsubcard {
+  color: black;
+  background-color: yellow;
+}

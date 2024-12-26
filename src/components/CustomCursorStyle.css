@@ -1,0 +1,35 @@
+/* Base style for the custom cursor */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.7) 40%, transparent 70%);
+    border: 2px solid rgba(0, 123, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
+    z-index: 9999;
+  }
+  
+  /* Clicking effect */
+  .custom-cursor.click-effect {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 123, 255, 0.3);
+    transform: translate(-50%, -50%) scale(1.2);
+    animation: pulse 0.3s ease-out;
+  }
+  
+  /* Pulse animation for the click effect */
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0;
+    }
+  }
+  

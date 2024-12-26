@@ -1,0 +1,65 @@
+/* Features Component */
+.features-container {
+    max-width: 1140px; /* Limit the width for larger screens */
+  }
+  
+  .feature-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-intem:hover {
+    transform: translateY(-5px); /* Slight hover lift */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  }
+  
+  .feature-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fits perfectly */
+    border-bottom: 1px solid #eee; /* Adds a subtle divider */
+  }
+  
+  .feature-content {
+    padding: 15px;
+  }
+  
+  .feature-time {
+    font-size: 14px;
+    color: #6c757d; /* Bootstrap's muted text color */
+  }
+  
+  .feature-tags {
+    font-size: 14px;
+    color: #007bff; /* Bootstrap's primary blue */
+  }
+  
+  .feature-title {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .feature-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feature-title {
+      font-size: 16px;
+    }
+  
+    .feature-desc {
+      font-size: 14px;
+    }
+  
+    .feature-item {
+      padding: 10px;
+    }
+  }
+  

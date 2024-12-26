@@ -1,0 +1,146 @@
+/* Main container for the form */
+.formstyle {
+  background-color: #f1f4fe; /* Light blue background */
+  padding: 5% 20px 80px 20px; /* Adjusted padding for better spacing */
+}
+
+/* Form container */
+.formorg {
+  background-color: white;
+  padding: 40px; /* Consistent padding around the form */
+  border-radius: 12px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Flexbox container for the first row */
+.formStyle1, .formStyle2, .formStyle3 {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+  gap: 15px; /* Consistent gap between form elements */
+}
+
+/* Input and Select styles */
+.formstyle input,
+.formstyle select {
+  flex: 1; /* Makes elements take equal space */
+  min-width: 200px; /* Prevents elements from becoming too narrow */
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ced4da; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for focus effect */
+}
+
+/* Focus effect for inputs and selects */
+.formstyle input:focus,
+.formstyle select:focus {
+  border-color: #0d6efd; /* Blue border on focus */
+  box-shadow: 0 0 4px rgba(13, 110, 253, 0.4); /* Glow effect */
+  outline: none;
+}
+
+/* Button styles */
+.formstyle .btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.formstyle .btn:hover {
+  background-color: #0045b3; /* Darker blue on hover */
+  color: white;
+}
+
+/* Submit button styling */
+.formstyle .btn-light {
+  background-color: #0d6efd; /* Bootstrap blue */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* Grip button styling */
+.formstyle .btn-grip {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Stack inputs and selects vertically on smaller screens */
+  .formstyle input, 
+  .formstyle select {
+    min-width: 100%;
+  }
+
+  .formstyle .formStyle1,
+  .formstyle .formStyle2,
+  .formstyle .formStyle3 {
+    flex-direction: column; /* Stack the form fields vertically */
+    gap: 10px; /* Adjust gap for mobile view */
+  }
+
+  /* Button takes full width on small screens */
+  .formstyle .btn-light {
+    width: 100%;
+  }
+}
+/* Button Customization */
+
+/* Custom button class */
+.btn-custom {
+  background: linear-gradient(135deg, #007bff, #00c6ff); /* Blue gradient background */
+  color: black; /* Text color */
+  border: none;
+  padding: 12px 25px; /* Padding for a more spacious look */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: background 0.3s, transform 0.2s ease-in-out; /* Smooth transition for background and scale */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* On hover effect */
+.btn-custom:hover {
+  color: white;
+  background: linear-gradient(135deg, #0056b3, #00a3d4); /* Darker gradient */
+  transform: scale(1.05); /* Slightly increase button size */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Button for FaGripLines icon */
+.btn-grip {
+  background-color: #f8f9fa; /* Light background */
+  /* color: #007bff;  */
+  padding: 10px; /* Increase padding for a more clickable feel */
+  border-radius: 50%; /* Circular button */
+  transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth transitions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* On hover effect */
+.btn-grip:hover {
+  background-color: #007bff; /* Change to blue on hover */
+  color: white;
+  transform: scale(1.1); /* Slightly increase size on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Icon size adjustment */
+.btn-grip svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
