@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/CardUpdateStyle.css";
+import "../components/CardUpdatestyle.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const CardUpdate = () => {
